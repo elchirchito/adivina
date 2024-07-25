@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Banda de Rock Nacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Adivina la Banda de Rock Nacional</h1>
+        <div class="button-container">
+            <button onclick="startQuiz('facil')">Fácil</button>
+            <button onclick="startQuiz('dificil')">Difícil</button>
+            <p>by elchirchito</p>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="quiz-question"></div>
+            <div id="quiz-options"></div>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Seguir</button>
+            <div id="quiz-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
